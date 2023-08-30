@@ -1,0 +1,7 @@
+D:\Nam-Tu-2023-2024\HKI\.NET\PhamHaiDang_NET\PhamHaiDang_NET\PhamHaiDang_NET\bin\Debug\PhamHaiDang_NET.exe.config
+D:\Nam-Tu-2023-2024\HKI\.NET\PhamHaiDang_NET\PhamHaiDang_NET\PhamHaiDang_NET\bin\Debug\PhamHaiDang_NET.exe
+D:\Nam-Tu-2023-2024\HKI\.NET\PhamHaiDang_NET\PhamHaiDang_NET\PhamHaiDang_NET\bin\Debug\PhamHaiDang_NET.pdb
+D:\Nam-Tu-2023-2024\HKI\.NET\PhamHaiDang_NET\PhamHaiDang_NET\PhamHaiDang_NET\obj\Debug\PhamHaiDang_NET.csproj.AssemblyReference.cache
+D:\Nam-Tu-2023-2024\HKI\.NET\PhamHaiDang_NET\PhamHaiDang_NET\PhamHaiDang_NET\obj\Debug\PhamHaiDang_NET.csproj.CoreCompileInputs.cache
+D:\Nam-Tu-2023-2024\HKI\.NET\PhamHaiDang_NET\PhamHaiDang_NET\PhamHaiDang_NET\obj\Debug\PhamHaiDang_NET.exe
+D:\Nam-Tu-2023-2024\HKI\.NET\PhamHaiDang_NET\PhamHaiDang_NET\PhamHaiDang_NET\obj\Debug\PhamHaiDang_NET.pdb
