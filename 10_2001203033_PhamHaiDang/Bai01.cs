@@ -35,9 +35,9 @@ namespace _10_2001203033_PhamHaiDang
                 e.Handled = true;
             
         }
-   
 
-        private void b_TextChanged(object sender, EventArgs e)
+
+        private void b_TextChanged(object sender, KeyPressEventArgs e)
         {
             //Control ctr = (Control)sender;
 
@@ -46,6 +46,9 @@ namespace _10_2001203033_PhamHaiDang
             //    this.errorProvider1.SetError(ctr, "This is not avalid number!");
             //else
             //    this.errorProvider1.Clear();
+
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
         }
 
         
