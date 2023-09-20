@@ -1,0 +1,8 @@
+D:\Nam-Tu-2023-2024\HKI\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\bin\Debug\10_2001203033_PhamHaiDang.exe.config
+D:\Nam-Tu-2023-2024\HKI\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\bin\Debug\10_2001203033_PhamHaiDang.exe
+D:\Nam-Tu-2023-2024\HKI\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\bin\Debug\10_2001203033_PhamHaiDang.pdb
+D:\Nam-Tu-2023-2024\HKI\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\obj\Debug\_10_2001203033_PhamHaiDang.Bai01.resources
+D:\Nam-Tu-2023-2024\HKI\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\obj\Debug\_10_2001203033_PhamHaiDang.Properties.Resources.resources
+D:\Nam-Tu-2023-2024\HKI\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\obj\Debug\10_2001203033_PhamHaiDang_Buoi05.csproj.GenerateResource.Cache
+D:\Nam-Tu-2023-2024\HKI\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\obj\Debug\10_2001203033_PhamHaiDang.exe
+D:\Nam-Tu-2023-2024\HKI\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\obj\Debug\10_2001203033_PhamHaiDang.pdb

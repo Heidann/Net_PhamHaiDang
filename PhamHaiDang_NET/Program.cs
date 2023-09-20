@@ -32,7 +32,7 @@ namespace PhamHaiDang_NET
             Console.ReadLine();
 
 
-            Product p1
+          
 
            
 
