@@ -21,20 +21,28 @@ namespace _10_2001203033_PhamHaiDang
 
 
         
-        private void a_TextChanged(object sender, EventArgs e)
+        private void a_TextChanged(object sender, KeyPressEventArgs e)
         {
             //Control ctr = (Control)sender;
-            //if (ctr.Text.Length > 0 && Char.IsDigit(ctr.Text[ctr.Text.Length - 11]))
+            
+
+            //if ( !IsNumber(ctr.Text) == true)
             //    this.errorProvider1.SetError(ctr, "This is not avalid number!");
             //else
             //    this.errorProvider1.Clear();
+
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+                e.Handled = true;
             
         }
+   
 
         private void b_TextChanged(object sender, EventArgs e)
         {
             //Control ctr = (Control)sender;
-            //if (ctr.Text.Length > 0 && Char.IsDigit(ctr.Text[ctr.Text.Length-11]))
+
+
+            //if (!IsNumber(ctr.Text) == true)
             //    this.errorProvider1.SetError(ctr, "This is not avalid number!");
             //else
             //    this.errorProvider1.Clear();
@@ -44,7 +52,8 @@ namespace _10_2001203033_PhamHaiDang
 
         private void Bai01_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            DialogResult r;
+            r = MessageBox.Show("Bạn có muốn thoát?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question,MessageBoxDefaultButton.Button1);
         }
         public double Cong(double a, double b)
         {
@@ -126,6 +135,11 @@ namespace _10_2001203033_PhamHaiDang
             txtA.Text = "";
             txtB.Text = "";
             ketqua.Text = "";
+        }
+
+        private void Bai01_Load(object sender, EventArgs e)
+        {
+
         }
 
         

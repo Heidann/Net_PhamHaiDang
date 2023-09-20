@@ -70,7 +70,6 @@
             this.txtA.Name = "txtA";
             this.txtA.Size = new System.Drawing.Size(155, 22);
             this.txtA.TabIndex = 2;
-            this.txtA.TextChanged += new System.EventHandler(this.a_TextChanged);
             // 
             // label2
             // 
@@ -169,6 +168,7 @@
             this.Name = "Bai01";
             this.Text = "Bai01";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Bai01_FormClosing);
+            this.Load += new System.EventHandler(this.Bai01_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
