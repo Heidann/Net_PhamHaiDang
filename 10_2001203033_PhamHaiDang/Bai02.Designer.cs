@@ -72,6 +72,7 @@
             this.btnDangKy.TabIndex = 2;
             this.btnDangKy.Text = "Đăng Ký";
             this.btnDangKy.UseVisualStyleBackColor = true;
+            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
             // 
             // label2
             // 
@@ -115,6 +116,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(210, 22);
             this.txtEmail.TabIndex = 1;
+        
             // 
             // txtMatKhau
             // 
@@ -147,6 +149,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Bai02";
             this.Text = "Bai02";
+            this.Load += new System.EventHandler(this.Bai02_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34031.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhamHaiDang_NET", "PhamHaiDang_NET\PhamHaiDang_NET.csproj", "{7ABFDB20-4AF8-43CA-BE5E-EF1CF354C828}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_2001203033_PhamHaiDang_Buoi05", "10_2001203033_PhamHaiDang\10_2001203033_PhamHaiDang_Buoi05.csproj", "{67DB58B5-8299-48CB-A208-9AB4A604243C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buoi07", "Buoi07\Buoi07.csproj", "{4AFD063C-472F-4C50-96E1-7EEF5FF9837E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buoi08", "Buoi08\Buoi08.csproj", "{993A6106-8934-4EA4-92D4-91E212E0461C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{67DB58B5-8299-48CB-A208-9AB4A604243C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67DB58B5-8299-48CB-A208-9AB4A604243C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67DB58B5-8299-48CB-A208-9AB4A604243C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AFD063C-472F-4C50-96E1-7EEF5FF9837E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AFD063C-472F-4C50-96E1-7EEF5FF9837E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AFD063C-472F-4C50-96E1-7EEF5FF9837E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AFD063C-472F-4C50-96E1-7EEF5FF9837E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{993A6106-8934-4EA4-92D4-91E212E0461C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{993A6106-8934-4EA4-92D4-91E212E0461C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{993A6106-8934-4EA4-92D4-91E212E0461C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{993A6106-8934-4EA4-92D4-91E212E0461C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

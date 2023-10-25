@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace _10_2001203033_PhamHaiDang
 {
     public partial class Bai01 : Form
@@ -47,7 +48,7 @@ namespace _10_2001203033_PhamHaiDang
             //else
             //    this.errorProvider1.Clear();
 
-            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))           
                 e.Handled = true;
         }
 
@@ -78,9 +79,11 @@ namespace _10_2001203033_PhamHaiDang
         {
             try
             {
-                txtA.Text = (Convert.ToDouble(txtA.Text)).ToString();
-                txtB.Text = (Convert.ToDouble(txtB.Text)).ToString();
-                ketqua.Text = (Convert.ToDouble(txtA.Text) + Convert.ToDouble(txtB.Text)).ToString();
+                
+                double a = Convert.ToDouble(txtA.Text);
+                double b= Convert.ToDouble(txtB.Text);
+                ketqua.Text = (a + b).ToString();
+                
             
             }
             catch
@@ -92,9 +95,9 @@ namespace _10_2001203033_PhamHaiDang
         {
             try
             {
-                txtA.Text = (Convert.ToDouble(txtA.Text)).ToString();
-                txtB.Text = (Convert.ToDouble(txtB.Text)).ToString();
-                ketqua.Text = (Convert.ToDouble(txtA.Text) - Convert.ToDouble(txtB.Text)).ToString();
+                double a = Convert.ToDouble(txtA.Text);
+                double b = Convert.ToDouble(txtB.Text);
+                ketqua.Text = (a - b).ToString();
 
             }
             catch
@@ -107,9 +110,9 @@ namespace _10_2001203033_PhamHaiDang
         {
             try
             {
-                txtA.Text = (Convert.ToDouble(txtA.Text)).ToString();
-                txtB.Text = (Convert.ToDouble(txtB.Text)).ToString();
-                ketqua.Text = (Convert.ToDouble(txtA.Text) * Convert.ToDouble(txtB.Text)).ToString();
+                double a = Convert.ToDouble(txtA.Text);
+                double b = Convert.ToDouble(txtB.Text);
+                ketqua.Text = (a * b).ToString();
 
             }
             catch
@@ -122,9 +125,11 @@ namespace _10_2001203033_PhamHaiDang
         {
             try
             {
-                txtA.Text = (Convert.ToDouble(txtA.Text)).ToString();
-                txtB.Text = (Convert.ToDouble(txtB.Text)).ToString();
-                ketqua.Text = (Convert.ToDouble(txtA.Text) / Convert.ToDouble(txtB.Text)).ToString();
+                double a = Convert.ToDouble(txtA.Text);
+                double b = Convert.ToDouble(txtB.Text);
+                ketqua.Text = (a / b).ToString();
+                
+              
 
             }
             catch

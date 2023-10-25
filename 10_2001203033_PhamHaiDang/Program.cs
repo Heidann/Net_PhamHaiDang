@@ -17,6 +17,8 @@ namespace _10_2001203033_PhamHaiDang
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Bai01());
+          
+            
         }
     }
 }
