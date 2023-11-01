@@ -11,24 +11,24 @@ using System.Data.SqlClient;
 
 namespace Buoi09
 {
-    public partial class Bai01Lop : Form
+    public partial class Bai02Lop : Form
     {
         KetNoi kn = new KetNoi();
         SqlConnection con;
-        
-        public Bai01Lop()
+        public Bai02Lop()
         {
             InitializeComponent();
             con = kn.conn;
             LoadData();
+
         }
-        public void  LoadData()
+        public void LoadData()
         {
             try
             {
                 con.Open();
 
-                string str = "select * from SinhVien";
+                string str = "select * from Diem";
 
                 SqlCommand cmd = new SqlCommand(str, con);
                 cmd.CommandType = CommandType.Text;
@@ -39,12 +39,12 @@ namespace Buoi09
                 dataGridView2.DataSource = dt;
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("That bai!");
             }
         }
-        private void LoadLop_ComboBox()
+        private void LoadMonHoc_ComboBox()
         {
             if (con.State == ConnectionState.Closed)
             {
@@ -53,13 +53,13 @@ namespace Buoi09
 
 
             string insertString;
-            insertString = "select * from Lop";
+            insertString = "select * from MonHoc";
             SqlCommand cmd = new SqlCommand(insertString, con);
 
             SqlDataReader rd = cmd.ExecuteReader();
             while (rd.Read())
             {
-                cboLop.Items.Add(rd["MaLop"].ToString());
+                cboMonHoc.Items.Add(rd["MaMonHoc"].ToString());
             }
 
 
@@ -68,7 +68,31 @@ namespace Buoi09
                 con.Close();
             }
         }
-        public bool IsSinhVienExists(string maKhoa)
+        private void LoadSinhVien_ComboBox()
+        {
+            if (con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
+
+
+            string insertString;
+            insertString = "select * from SinhVien";
+            SqlCommand cmd = new SqlCommand(insertString, con);
+
+            SqlDataReader rd = cmd.ExecuteReader();
+            while (rd.Read())
+            {
+                cboSInhVien.Items.Add(rd["MaSinhVien"].ToString());
+            }
+
+
+            if (con.State == ConnectionState.Open)
+            {
+                con.Close();
+            }
+        }
+        public bool IsDiemExists(string maKhoa)
         {
             try
             {
@@ -79,7 +103,7 @@ namespace Buoi09
 
 
                 string insertString;
-                insertString = "SELECT COUNT(*) FROM SinhVien WHERE MaSinhVien ='" + txtMa.Text + "'";
+                insertString = "SELECT COUNT(*) FROM Diem WHERE Diem ='" + txtDiem.Text + "'";
                 SqlCommand cmd = new SqlCommand(insertString, con);
 
                 int count = Convert.ToInt32(cmd.ExecuteScalar());
@@ -101,16 +125,15 @@ namespace Buoi09
                 return false;
             }
         }
-
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if (txtMa.Text.Length == 0 || txtTen.Text.Length == 0)
+            if (cboMonHoc.Text.Length == 0 || cboSInhVien.Text.Length == 0 || txtDiem.Text.Length == 0)
             {
                 MessageBox.Show("Không được để trống! ");
             }
             else
             {
-                if (IsSinhVienExists(txtMa.Text))
+                if (IsDiemExists(txtDiem.Text))
                 {
                     try
                     {
@@ -121,7 +144,7 @@ namespace Buoi09
 
 
                         string insertString;
-                        insertString = "insert into SinhVien values('" + txtMa.Text + "',N'" + txtTen.Text +  "','" + dt_NgaySinh.Text + "',N'" + cboLop.Text + "')";
+                        insertString = "insert into Diem values('" + cboSInhVien.Text + "',N'" + cboMonHoc.Text + "','" + txtDiem.Text + "')";
                         SqlCommand cmd = new SqlCommand(insertString, con);
 
 
@@ -145,7 +168,7 @@ namespace Buoi09
                 }
                 else
                 {
-                    MessageBox.Show("Đã tồn tại Mã Sinh Vien " + txtMa.Text);
+                    MessageBox.Show("Đã tồn tại diem cua Sinh Vien " + cboSInhVien.Text);
                 }
 
 
@@ -154,7 +177,7 @@ namespace Buoi09
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            if (txtMa.Text.Length == 0)
+            if (cboSInhVien.Text.Length == 0)
             {
                 MessageBox.Show("Hãy điền Mã Sinh Vien cần xóa! ");
             }
@@ -169,7 +192,7 @@ namespace Buoi09
 
                     string insertString;
 
-                    insertString = "delete SinhVien where MaSinhVien='" + txtMa.Text + "'";
+                    insertString = "delete Diem where MaSinhVien='" + cboSInhVien.Text + "'";
                     SqlCommand cmd = new SqlCommand(insertString, con);
 
 
@@ -195,7 +218,7 @@ namespace Buoi09
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            if (txtMa.Text.Length == 0 || txtTen.Text.Length == 0 || dt_NgaySinh.Text.Length == 0)
+            if (cboSInhVien.Text.Length == 0 || cboMonHoc.Text.Length == 0 || txtDiem.Text.Length == 0)
             {
                 MessageBox.Show("Không được để trống! ");
             }
@@ -209,7 +232,7 @@ namespace Buoi09
                     }
 
                     string insertString;
-                    insertString = "update SinhVien set Hoten='" + txtTen.Text + "',MaLop='" + cboLop.Text + "',NgaySinh='" + dt_NgaySinh.Text + "' where MaSinhVien='" + txtMa.Text + "'";
+                    insertString = "update Diem set MaMonHoc='" + cboMonHoc.Text + "',Diem='" + txtDiem.Text + "' where MaSinhVien='" + cboSInhVien.Text + "'";
                     SqlCommand cmd = new SqlCommand(insertString, con);
 
 
@@ -234,9 +257,10 @@ namespace Buoi09
             }
         }
 
-        private void Bai01Lop_Load(object sender, EventArgs e)
+        private void Bai02Lop_Load(object sender, EventArgs e)
         {
-            LoadLop_ComboBox();
+            LoadMonHoc_ComboBox();
+            LoadSinhVien_ComboBox();
         }
     }
 }
