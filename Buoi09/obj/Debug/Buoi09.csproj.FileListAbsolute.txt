@@ -8,3 +8,4 @@ C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi09\bin\
 C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi09\obj\Debug\Buoi09.exe
 C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi09\obj\Debug\Buoi09.pdb
 C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi09\obj\Debug\Buoi09.csproj.AssemblyReference.cache
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi09\obj\Debug\Buoi09.Bai02.resources

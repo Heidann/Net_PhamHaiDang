@@ -12,11 +12,11 @@ using System.Data.SqlClient;
 
 namespace Buoi09
 {
-    public partial class BTM : Form
+    public partial class Bai02 : Form
     {
-        KetNoi kn = new KetNoi()
-;       SqlConnection con;
-        public BTM()
+        KetNoi kn = new KetNoi(); 
+        SqlConnection con;
+        public Bai02()
         {
             InitializeComponent();
             con = kn.conn;
@@ -32,7 +32,7 @@ namespace Buoi09
                 }
 
                 string insertString;
-                insertString = "select * from Khoa";
+                insertString = "select * from Lop";
                 SqlCommand cmd = new SqlCommand(insertString, con);
 
 
@@ -54,57 +54,42 @@ namespace Buoi09
             }
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
+        private void LoadKhoa_ComboBox()
         {
-            if (txtMa.Text.Length == 0 || txtTen.Text.Length == 0)
+            if (con.State == ConnectionState.Closed)
             {
-                MessageBox.Show("Không được để trống! ");
+                con.Open();
             }
-            else
+
+
+            string insertString;
+            insertString = "select * from Khoa";
+            SqlCommand cmd = new SqlCommand(insertString, con);
+
+            SqlDataReader rd = cmd.ExecuteReader();
+            while (rd.Read())
             {
-               if (IsMaKhoaExists(txtMa.Text))
-                {
-                    try
-                    {
-                        if (con.State == ConnectionState.Closed)
-                        {
-                            con.Open();
-                        }
-
-
-                        string insertString;
-                        insertString = "insert into Khoa values('" + txtMa.Text + "',N'" + txtTen.Text + "')";
-                        SqlCommand cmd = new SqlCommand(insertString, con);
-
-
-                        cmd.ExecuteNonQuery();
-
-                        if (con.State == ConnectionState.Open)
-                        {
-                            con.Close();
-                        }
-                        MessageBox.Show("Them thanh cong");
-
-                        LoadData();
-
-
-
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("That bai");
-                    }
-                }
-               else
-                {
-                    MessageBox.Show("Đã tồn tại Mã Khoa " + txtMa.Text  );
-                }    
-                  
-               
+                cboKhoa.Items.Add(rd["MaKhoa"].ToString());
             }
+
+
+            if (con.State == ConnectionState.Open)
+            {
+                con.Close();
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
-        public bool IsMaKhoaExists(string maKhoa)
+
+        private void Bai02_Load(object sender, EventArgs e)
+        {
+            LoadKhoa_ComboBox();
+        }
+
+        public bool IsMaLopExists(string maKhoa)
         {
             try
             {
@@ -115,7 +100,7 @@ namespace Buoi09
 
 
                 string insertString;
-                insertString = "SELECT COUNT(*) FROM Khoa WHERE MaKhoa ='" + txtMa.Text + "'";
+                insertString = "SELECT COUNT(*) FROM Lop WHERE MaLop ='" + txtMa.Text + "'";
                 SqlCommand cmd = new SqlCommand(insertString, con);
 
                 int count = Convert.ToInt32(cmd.ExecuteScalar());
@@ -138,11 +123,61 @@ namespace Buoi09
             }
         }
 
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            if (txtMa.Text.Length == 0 || txtTen.Text.Length == 0)
+            {
+                MessageBox.Show("Không được để trống! ");
+            }
+            else
+            {
+                if (IsMaLopExists(txtMa.Text))
+                {
+                    try
+                    {
+                        if (con.State == ConnectionState.Closed)
+                        {
+                            con.Open();
+                        }
+
+
+                        string insertString;
+                        insertString = "insert into Lop values('" + txtMa.Text + "',N'" + txtTen.Text + "',N'" + cboKhoa.Text + "')";
+                        SqlCommand cmd = new SqlCommand(insertString, con);
+
+
+                        cmd.ExecuteNonQuery();
+
+                        if (con.State == ConnectionState.Open)
+                        {
+                            con.Close();
+                        }
+                        MessageBox.Show("Them thanh cong");
+
+                        LoadData();
+
+
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("That bai");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Đã tồn tại Mã Lớp " + txtMa.Text);
+                }
+
+
+            }
+        }
+
         private void btnXoa_Click(object sender, EventArgs e)
         {
             if (txtMa.Text.Length == 0)
             {
-                MessageBox.Show("Hãy điền Mã Khoa cần xóa! ");
+                MessageBox.Show("Hãy điền Mã Lớp cần xóa! ");
             }
             else
             {
@@ -155,7 +190,7 @@ namespace Buoi09
 
                     string insertString;
 
-                    insertString = "delete Khoa where MaKhoa='" + txtMa.Text + "'";
+                    insertString = "delete Lop where MaLop='" + txtMa.Text + "'";
                     SqlCommand cmd = new SqlCommand(insertString, con);
 
 
@@ -195,7 +230,7 @@ namespace Buoi09
                     }
 
                     string insertString;
-                    insertString = "update Khoa set TenKhoa='" + txtTen.Text + "' where MaKhoa='" + txtMa.Text + "'";
+                    insertString = "update Lop set TenLop='" + txtTen.Text + "',MaKhoa='" + cboKhoa.Text + "' where MaLop='" + txtMa.Text + "'";
                     SqlCommand cmd = new SqlCommand(insertString, con);
 
 
@@ -219,41 +254,5 @@ namespace Buoi09
                 }
             }
         }
-
-        private void btnHienThi_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (con.State == ConnectionState.Closed)
-                {
-                    con.Open();
-                }
-
-                string insertString;
-                insertString = "select * from Khoa";
-                SqlCommand cmd = new SqlCommand(insertString, con);
-
-
-                cmd.CommandType = CommandType.Text;
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                con.Close();
-                dataGridView2.DataSource = dt;
-
-
-
-
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("That bai");
-            }
-        }
-
-  
-
-    
     }
 }

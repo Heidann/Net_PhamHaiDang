@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bai02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bai02.Designer.cs">
+      <DependentUpon>Bai02.cs</DependentUpon>
+    </Compile>
     <Compile Include="BTM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +61,9 @@
     <Compile Include="KetNoi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Bai02.resx">
+      <DependentUpon>Bai02.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BTM.resx">
       <DependentUpon>BTM.cs</DependentUpon>
     </EmbeddedResource>
