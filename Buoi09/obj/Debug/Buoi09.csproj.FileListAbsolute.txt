@@ -9,3 +9,4 @@ C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi09\obj\
 C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi09\obj\Debug\Buoi09.pdb
 C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi09\obj\Debug\Buoi09.csproj.AssemblyReference.cache
 C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi09\obj\Debug\Buoi09.Bai02.resources
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi09\obj\Debug\Buoi09.Bai01Lop.resources

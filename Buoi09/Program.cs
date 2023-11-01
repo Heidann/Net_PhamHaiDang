@@ -16,7 +16,7 @@ namespace Buoi09
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Bai02());
+            Application.Run(new Bai01Lop());
         }
     }
 }
