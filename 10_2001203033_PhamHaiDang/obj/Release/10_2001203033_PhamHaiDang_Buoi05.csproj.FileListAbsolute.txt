@@ -1,0 +1,11 @@
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\bin\Release\10_2001203033_PhamHaiDang.exe.config
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\bin\Release\10_2001203033_PhamHaiDang.exe
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\bin\Release\10_2001203033_PhamHaiDang.pdb
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\obj\Release\10_2001203033_PhamHaiDang_Buoi05.csproj.AssemblyReference.cache
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\obj\Release\_10_2001203033_PhamHaiDang.Bai01.resources
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\obj\Release\_10_2001203033_PhamHaiDang.Bai02.resources
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\obj\Release\_10_2001203033_PhamHaiDang.Properties.Resources.resources
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\obj\Release\10_2001203033_PhamHaiDang_Buoi05.csproj.GenerateResource.cache
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\obj\Release\10_2001203033_PhamHaiDang_Buoi05.csproj.CoreCompileInputs.cache
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\obj\Release\10_2001203033_PhamHaiDang.exe
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\10_2001203033_PhamHaiDang\obj\Release\10_2001203033_PhamHaiDang.pdb

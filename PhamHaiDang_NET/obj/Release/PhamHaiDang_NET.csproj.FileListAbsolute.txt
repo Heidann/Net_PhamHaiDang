@@ -1,0 +1,6 @@
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\PhamHaiDang_NET\bin\Release\PhamHaiDang_NET.exe.config
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\PhamHaiDang_NET\bin\Release\PhamHaiDang_NET.exe
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\PhamHaiDang_NET\bin\Release\PhamHaiDang_NET.pdb
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\PhamHaiDang_NET\obj\Release\PhamHaiDang_NET.csproj.CoreCompileInputs.cache
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\PhamHaiDang_NET\obj\Release\PhamHaiDang_NET.exe
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\PhamHaiDang_NET\obj\Release\PhamHaiDang_NET.pdb

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Test_Config" Class="Bai14DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-60OJDK8;Initial Catalog=Test_Config;Integrated Security=True" SettingsObjectName="KTThu.Properties.Settings" SettingsPropertyName="Test_ConfigConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.COSO" Member="COSOs">
+    <Type Name="COSO">
+      <Column Name="macoso" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tencoso" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="COSO_DONVI" Member="DONVIs" ThisKey="macoso" OtherKey="macoso" Type="DONVI" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GV" Member="GVs">
+    <Type Name="GV">
+      <Column Name="masv" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="hoten" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="sdt" Type="System.String" DbType="NChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="ghichu" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="madonvi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="DONVI_GV" Member="DONVI" ThisKey="madonvi" OtherKey="madonvi" Type="DONVI" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DONVI" Member="DONVIs">
+    <Type Name="DONVI">
+      <Column Name="madonvi" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tendonvi" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="macoso" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="DONVI_GV" Member="GVs" ThisKey="madonvi" OtherKey="madonvi" Type="GV" />
+      <Association Name="COSO_DONVI" Member="COSO" ThisKey="macoso" OtherKey="macoso" Type="COSO" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Bai14">
+  <DataContextMoniker Name="/Bai14DataContext" />
+  <nestedChildShapes>
+    <classShape Id="7ead2509-c85f-44aa-9651-cc84c528a941" absoluteBounds="0.75, 1.25, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/Bai14DataContext/COSO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a8662c8a-bae2-47fa-9045-50c4822033ef" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="22bb51e4-66b0-4ea8-8499-da8a8a0ad3ce" absoluteBounds="6.25, 0.875, 2, 1.7708968098958333">
+      <DataClassMoniker Name="/Bai14DataContext/GV" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be5a519a-c089-4f1e-bdf7-0129cf4640ab" absoluteBounds="6.265, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="90763271-eb4e-4529-9468-6402e8cc995b" absoluteBounds="3.5, 1.125, 2, 1.3862939453124998">
+      <DataClassMoniker Name="/Bai14DataContext/DONVI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="574218af-6a8c-4461-ab7b-562a3365b470" absoluteBounds="3.515, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 1.81814697265625); (6.25 : 1.81814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Bai14DataContext/DONVI/DONVI_GV" />
+      <nodes>
+        <classShapeMoniker Id="90763271-eb4e-4529-9468-6402e8cc995b" />
+        <classShapeMoniker Id="22bb51e4-66b0-4ea8-8499-da8a8a0ad3ce" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.84699625651042); (3.5 : 1.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/Bai14DataContext/COSO/COSO_DONVI" />
+      <nodes>
+        <classShapeMoniker Id="7ead2509-c85f-44aa-9651-cc84c528a941" />
+        <classShapeMoniker Id="90763271-eb4e-4529-9468-6402e8cc995b" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
