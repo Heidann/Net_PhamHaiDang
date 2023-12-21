@@ -1,0 +1,10 @@
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi10\bin\Debug\Buoi10.exe.config
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi10\bin\Debug\Buoi10.exe
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi10\bin\Debug\Buoi10.pdb
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi10\obj\Debug\Buoi10.csproj.AssemblyReference.cache
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi10\obj\Debug\Buoi10.Form1.resources
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi10\obj\Debug\Buoi10.Properties.Resources.resources
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi10\obj\Debug\Buoi10.csproj.GenerateResource.cache
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi10\obj\Debug\Buoi10.csproj.CoreCompileInputs.cache
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi10\obj\Debug\Buoi10.exe
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\Buoi10\obj\Debug\Buoi10.pdb

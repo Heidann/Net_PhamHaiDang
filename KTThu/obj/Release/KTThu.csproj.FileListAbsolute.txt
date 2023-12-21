@@ -1,0 +1,10 @@
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\KTThu\bin\Release\KTThu.exe.config
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\KTThu\bin\Release\KTThu.exe
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\KTThu\bin\Release\KTThu.pdb
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\KTThu\obj\Release\KTThu.csproj.AssemblyReference.cache
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\KTThu\obj\Release\KTThu.FrmConfig.resources
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\KTThu\obj\Release\KTThu.Properties.Resources.resources
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\KTThu\obj\Release\KTThu.csproj.GenerateResource.cache
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\KTThu\obj\Release\KTThu.csproj.CoreCompileInputs.cache
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\KTThu\obj\Release\KTThu.exe
+C:\Users\phhai\Documents\MonHoc\.NET\PhamHaiDang_NET\PhamHaiDang_NET\KTThu\obj\Release\KTThu.pdb
